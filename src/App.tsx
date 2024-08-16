@@ -3,6 +3,7 @@ import Home from "./pages/Home/Home.tsx";
 import Destination from "./pages/Destination/Destination.tsx";
 import Crew from "./pages/Crew/Crew.tsx";
 import Technology from "./pages/Technology/Technology.tsx";
+import "./App.css";
 
 const App = () => {
   return (

@@ -1,0 +1,78 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.home .background {
+  position: absolute;
+  z-index: -1;
+  background-image: url("../../assets/background-home-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-body {
+  height: 82vh;
+  padding: 10vh 10vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+}
+
+.home .home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 400px;
+}
+
+.home-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.home-button-container {
+  position: relative;
+  z-index: 10;
+}
+
+.home-button {
+  width: 272px;
+  height: 272px;
+  background-color: white;
+  border-radius: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.home-button h4 {
+  color: black;
+}
+
+.btn-background {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  opacity: 0.5;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  border-radius: 400px;
+  z-index: -1;
+  transition: ease 500ms;
+}
+
+.btn-background.hovered-btn {
+  width: 448px;
+  height: 448px;
+  top: -88px;
+  left: -88px;
+}
