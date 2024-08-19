@@ -52,3 +52,7 @@
   text-transform: uppercase;
   line-height: 96px;
 }
+
+.menu-container a {
+  text-decoration: none;
+}

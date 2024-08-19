@@ -1,0 +1,18 @@
+.crew {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #0d0f1c;
+  z-index: 0;
+}
+
+.crew .background {
+  position: absolute;
+  z-index: -1;
+  background-image: url("../../assets/background-crew-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+}

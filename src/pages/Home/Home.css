@@ -2,6 +2,8 @@
   width: 100vw;
   height: 100vh;
   position: relative;
+  background-color: #0d0f1c;
+  z-index: 0;
 }
 
 .home .background {
@@ -38,6 +40,10 @@
 .home-button-container {
   position: relative;
   z-index: 10;
+}
+
+.home-button-container a {
+  text-decoration: none;
 }
 
 .home-button {

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import NavBar from "../../components/NavBar/NavBar";
 import "./Home.css";
 import "../../App.css";
@@ -23,13 +24,16 @@ const Home = () => {
             </p>
           </div>
           <div className="home-button-container">
-            <div
-              className="home-button"
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
-            >
-              <h4>Explore</h4>
-            </div>
+            <Link to={`/destination`}>
+              <div
+                className="home-button"
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+              >
+                <h4>Explore</h4>
+              </div>
+            </Link>
+
             <div
               className={
                 hovered ? "btn-background hovered-btn" : "btn-background"

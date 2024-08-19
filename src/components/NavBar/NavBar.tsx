@@ -29,7 +29,7 @@ const NavBar = (props: Props) => {
                   0{e.id} {e.name}
                 </p>
               ) : (
-                <Link to={`/${e.name}`}>
+                <Link to={e.name === "home" ? `/` : `/${e.name}`}>
                   <p>
                     0{e.id} {e.name}
                   </p>
