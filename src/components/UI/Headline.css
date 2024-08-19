@@ -1,0 +1,13 @@
+.headline {
+  height: 14vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.headline span {
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  opacity: 0.25;
+}
