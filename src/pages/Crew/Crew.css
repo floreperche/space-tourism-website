@@ -16,3 +16,63 @@
   width: 100vw;
   height: 100vh;
 }
+
+.crew-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0vh 10vw;
+  box-sizing: border-box;
+}
+
+.crew-container {
+  display: flex;
+}
+
+.crew-container .infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.crew-container .explaination {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 50px;
+}
+
+.crew-container > div {
+  width: 50%;
+}
+
+.crew-container img {
+  display: block;
+  margin: auto;
+  height: 55vh;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.crew-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.crew-nav .bubble {
+  width: 15px;
+  height: 15px;
+  background-color: #979797;
+  border-radius: 99px;
+}
+
+.crew-nav .bubble.selected {
+  background-color: white;
+}
