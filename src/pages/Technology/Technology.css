@@ -16,3 +16,74 @@
   width: 100vw;
   height: 100vh;
 }
+
+.technology-body {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10vw;
+  box-sizing: border-box;
+}
+
+.technology-container {
+  height: 66vh;
+  display: flex;
+  padding-bottom: 10vh;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 24px;
+}
+
+.technology-container .nav {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.technology-container .button {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 99px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.technology-container .button.selected {
+  background-color: white;
+  border-color: white;
+}
+
+.technology-container .button:hover {
+  border-color: white;
+}
+
+.technology-container .button.selected h4 {
+  color: #0b0d17;
+}
+
+.technology-container .img-container,
+.technology-container .tech-info-container {
+  width: 50%;
+}
+
+.tech-info-container {
+  display: flex;
+  gap: 40px;
+}
+
+.technology-container .img-container img {
+  height: 54vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tech-info-container .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
