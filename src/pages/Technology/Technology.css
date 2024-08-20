@@ -9,7 +9,7 @@
 .technology .background {
   position: absolute;
   z-index: -1;
-  background-image: url("../../assets/background-technology-desktop.jpg");
+  background-image: url("../../assets/backgrounds/background-technology-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -86,4 +86,16 @@
   flex-direction: column;
   gap: 30px;
   justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .technology .background {
+    background-image: url("../../assets/backgrounds/background-technology-tablet.jpg");
+  }
+}
+
+@media (max-width: 768px) {
+  .technology .background {
+    background-image: url("../../assets/backgrounds/background-technology-mobile.jpg");
+  }
 }

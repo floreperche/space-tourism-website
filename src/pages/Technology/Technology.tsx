@@ -21,6 +21,7 @@ const Technology = () => {
                 {technologies.map((tech, i) => {
                   return (
                     <div
+                      key={i}
                       className={
                         tech === selectedTechnology
                           ? "button selected"

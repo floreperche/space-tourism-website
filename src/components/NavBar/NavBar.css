@@ -27,6 +27,10 @@
   height: 96px;
 }
 
+.menu-container-mobile {
+  display: none;
+}
+
 .menu-container div {
   display: flex;
   align-items: center;
@@ -55,4 +59,90 @@
 
 .menu-container a {
   text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .nav-container {
+    height: 10vh;
+  }
+  .nav-container .center {
+    width: 0vw;
+  }
+  .menu-container {
+    width: 80vw;
+    height: 10vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .menu-container-mobile {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+  }
+
+  .menu-container-mobile img {
+    width: 30px;
+  }
+
+  .menu-mobile-displayed {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255, 0.05);
+    backdrop-filter: blur(80px);
+    z-index: 10;
+  }
+
+  .menu-mobile-displayed .icon-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 32px 24px;
+  }
+
+  .menu-mobile-displayed .mobile-element {
+    margin-bottom: 24px;
+    margin-left: 24px;
+    cursor: pointer;
+    border-right: 3px solid transparent;
+  }
+
+  .menu-mobile-displayed .mobile-element.selected,
+  .menu-mobile-displayed .mobile-element.selected:hover {
+    border-right: 3px solid white;
+  }
+
+  .menu-mobile-displayed .mobile-element:hover {
+    border-right-color: rgb(255, 255, 255, 0.4);
+  }
+
+  .menu-mobile-displayed {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19.2%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .menu-mobile-displayed span {
+    font-weight: 600;
+  }
+
+  .menu-mobile-displayed a {
+    text-decoration: none;
+  }
 }

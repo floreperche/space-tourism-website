@@ -20,6 +20,7 @@ const Destination = () => {
               {destinations.map((planet) => {
                 return (
                   <img
+                    key={planet.name}
                     className={
                       planet.name === selectedPlanet.name
                         ? "planet-selected"
@@ -36,6 +37,7 @@ const Destination = () => {
                 {destinations.map((planet) => {
                   return (
                     <div
+                      key={planet.name}
                       onClick={() => setSelectedPlanet(planet)}
                       className={
                         planet.name === selectedPlanet.name ? "selected" : ""

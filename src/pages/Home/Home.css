@@ -9,7 +9,7 @@
 .home .background {
   position: absolute;
   z-index: -1;
-  background-image: url("../../assets/background-home-desktop.jpg");
+  background-image: url("../../assets/backgrounds/background-home-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -29,13 +29,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 400px;
+  width: 100%;
 }
 
 .home-description {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  max-width: 600px;
 }
 .home-button-container {
   position: relative;
@@ -81,4 +82,16 @@
   height: 448px;
   top: -88px;
   left: -88px;
+}
+
+@media (max-width: 992px) {
+  .home .background {
+    background-image: url("../../assets/backgrounds/background-home-tablet.jpg");
+  }
+}
+
+@media (max-width: 768px) {
+  .home .background {
+    background-image: url("../../assets/backgrounds/background-home-mobile.jpg");
+  }
 }
