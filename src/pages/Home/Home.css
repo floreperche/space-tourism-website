@@ -88,10 +88,64 @@
   .home .background {
     background-image: url("../../assets/backgrounds/background-home-tablet.jpg");
   }
+
+  .home-body {
+    height: 90vh;
+  }
+
+  .home .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .home-description {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
+  .home-body {
+    padding: 5vh 10vw;
+  }
   .home .background {
     background-image: url("../../assets/backgrounds/background-home-mobile.jpg");
+  }
+
+  .home-description h5 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 15%;
+  }
+
+  .home-description h1 {
+    font-family: "Bellefair", serif;
+    font-size: 80px;
+    letter-spacing: 15%;
+  }
+
+  .home-description p {
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+    line-height: 180%;
+  }
+
+  .home-button {
+    width: 144px;
+    height: 144px;
+  }
+
+  .home-button h4 {
+    font-family: "Bellefair", serif;
+
+    font-size: 18px;
+  }
+
+  .btn-background.hovered-btn {
+    width: 320px;
+    height: 320px;
+    top: -88px;
+    left: -88px;
   }
 }
