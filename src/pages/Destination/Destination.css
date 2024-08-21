@@ -165,4 +165,16 @@
   .destination .background {
     background-image: url("../../assets/backgrounds/background-destination-mobile.jpg");
   }
+  .destination-body {
+    padding: 0vh 4vw;
+  }
+
+  .planet-selector {
+    gap: 24px;
+  }
+
+  .planet-selector div {
+    gap: 24px;
+    padding: 4px 4px;
+  }
 }
