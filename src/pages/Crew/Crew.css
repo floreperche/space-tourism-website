@@ -84,10 +84,47 @@
   .crew .background {
     background-image: url("../../assets/backgrounds/background-crew-tablet.jpg");
   }
+
+  .crew-container {
+    flex-direction: column;
+    gap: 4vh;
+  }
+
+  .crew-container > div {
+    width: 100%;
+  }
+
+  .crew-container .infos {
+    gap: 4vh;
+    text-align: center;
+    width: 75vw;
+  }
+
+  .crew-nav {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .crew-container img {
+    display: block;
+    margin: auto;
+    max-height: 40vh;
+  }
+
+  .crew-nav .bubble {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 @media (max-width: 768px) {
   .crew .background {
     background-image: url("../../assets/backgrounds/background-crew-mobile.jpg");
+  }
+
+  .crew-container img {
+    display: block;
+    margin: auto;
+    height: 20vh;
   }
 }
