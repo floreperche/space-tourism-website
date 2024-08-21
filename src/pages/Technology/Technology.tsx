@@ -14,7 +14,7 @@ const Technology = () => {
         <div className="background"></div>
         <NavBar curentPage="technology" />
         <div className="technology-body">
-          <Headline step="02" value="Space launch 101" />
+          <Headline step="03" value="Space launch 101" />
           <div className="technology-container">
             <div className="tech-info-container">
               <div className="nav">
@@ -42,9 +42,16 @@ const Technology = () => {
                 <p>{selectedTechnology.description}</p>
               </div>
             </div>
+
             <div className="img-container">
               <img
+                className="desktop"
                 src={`/src${selectedTechnology.images.portrait.slice(1)}`}
+                alt="technology image"
+              />
+              <img
+                className="tablet-mobile"
+                src={`/src${selectedTechnology.images.landscape.slice(1)}`}
                 alt="technology image"
               />
             </div>

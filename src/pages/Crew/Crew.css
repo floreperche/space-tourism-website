@@ -88,6 +88,7 @@
   .crew-container {
     flex-direction: column;
     gap: 4vh;
+    align-items: center;
   }
 
   .crew-container > div {
@@ -121,7 +122,9 @@
   .crew .background {
     background-image: url("../../assets/backgrounds/background-crew-mobile.jpg");
   }
-
+  .crew-body {
+    padding: 0vh 4vw;
+  }
   .crew-container img {
     display: block;
     margin: auto;
