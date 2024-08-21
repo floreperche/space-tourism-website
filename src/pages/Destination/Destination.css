@@ -137,6 +137,28 @@
   .destination .background {
     background-image: url("../../assets/backgrounds/background-destination-tablet.jpg");
   }
+
+  .destination-body .destination-container {
+    flex-direction: column;
+    height: 74vh;
+  }
+
+  .destination-container .planet-container,
+  .destination-container .info-container {
+    width: 100%;
+  }
+
+  .destination-container .planet-container img {
+    max-height: 100%;
+  }
+
+  .destination-container .info-container {
+    text-align: center;
+  }
+
+  .planet-selector {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
